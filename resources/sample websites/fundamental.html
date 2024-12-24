@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>3 ways to add 
+        JS to HTML</title>
+</head>
+<body>
+    <!-- 
+    Javascript can be embedded
+     to HTML in three
+    different ways
+    i. inline javascript
+    ii. internal javascript
+    iii. external javascript
+    -->
+<button 
+onclick="alert('Warning!')">
+    CLICK HERE
+</button>
+<br>
+<a href="#" id="anchor">
+    CLICK HERE TO OPEN IT
+</a>
+<script>
+document.getElementById("anchor")
+.onclick = function(){
+    alert("Welcome to NPS");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LOGIN FILE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <p>
+                <label for="email" class="form-label">User Name:</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your username">
+            </p>
+            <p>
+                <label for="pw">Password:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <span id="togglePassword" class="eye-icon">👁️</span>
+                </div>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

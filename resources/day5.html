@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical operators</title>
+</head>
+<body>
+
+<div>
+    <form>
+        <label>Payment Method:</label>
+<br>
+<input type="radio" name="pay" id="esewa">ESEWA
+<input type="radio" name="pay" id="khalti">KHALTI
+<input type="radio" name="pay" id="fonepay">FONEPAY
+<br>
+<input type="button" id="myBtn" value="submit">
+<input type="reset">
+    </form>
+</div>
+<h1 id="myH1"></h1>
+<script>//DOM manipulation
+    document.getElementById("myBtn").onclick =
+    function(){
+ if(document.getElementById("esewa").checked
+  == true)
+    {
+document.getElementById("myH1").innerHTML =
+"You have chosen to pay via ESEWA";
+    }
+    else if(document.getElementById("khalti").checked){
+        document.getElementById("myH1").innerHTML =
+"You have chosen to pay via Khalti";
+    }else if(document.getElementById("fonepay").checked){
+        document.getElementById("myH1").innerHTML =
+"You have chosen to pay via fonepay";
+    }else{
+        document.getElementById("myH1").innerHTML =
+"You have NOT chosen any payement method";
+    }
+    }
+</script>
+</body>
+</html>

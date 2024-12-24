@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5500/table2.html" method="post">
+        <label>Username:</label>
+        <input type="text" placeholder="Enter your username:"  minlength="6" maxlength="15" required>
+        <label>password: </label>
+        <input type="password" placeholder="Enter your password: " minlength="8" required> <br>
+        <label>Mobile #:</label>
+        <input type="tel"  pattern="[0-9]{10}"><br>
+        <label>Birthday</label>
+        <input type="date">
+        <input type="datetime">
+        <br>
+        <label>Weight:</label>
+        <input type="number" minlength="0">KG
+        <br>
+
+        <label>COuntry:</label>
+        <input type="text" list="countries">
+        <datalist id="countries">
+            <option value="nepal">Nepal</option>
+            <option value="china">China</option>
+        </datalist>
+        <label>Payment: </label>
+        <select>
+            <option>Visa</option>
+            <option>Esewa</option>
+        </select>
+        <input type="file" accept="image/jpeg, image/png">
+        <input type="reset">
+        <input type="submit">
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+CLS
+A = 10
+B = 10
+D = A - B
+PRINT D
+SWAP A, B
+D = A - B
+PRINT D
+END

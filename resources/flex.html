@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background:linear-gradient(to right, yellow,red,purple,blue);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            display:flex;
+            align-items:flex-end;
+            flex-direction: column;
+            justify-content: space-evenly;
+          
+            height:1000px;
+            border:10px solid black;
+            
+        }
+        .box{
+            width:100px;
+            height:100px;
+            border:1px solid red;
+            
+           
+        }
+        .box img{
+            max-width:100px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Cascading Style Sheet</div>
+        <div class="box">Hakon Wium Lie</div>
+        <div class="box">Tim Berners Lee</div>
+        <div class="box"><img src="/resources/pics/coldplay.jpg" alt="coldplay"></div>
+    </div>
+</body>
+</html>

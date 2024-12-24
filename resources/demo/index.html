@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML FORM</title>
+</head>
+<body>
+    <H1>Online Admission Form</H1>
+    <form name="form1" action="#" method="POST">
+        <fieldset>
+            <legend >Personal Info</legend>
+            <p>
+                <label for="name"> Username:</label>
+               <input type="text" id="name" placeholder="Spongebob" name="username" required>
+            </p>
+            <p>
+                <label for="title">Title:</label>
+                <label for="mr">Mr.</label>
+                <input type="radio" id="mr" name="gender">
+                <label for="mrs">Mrs.</label>
+                <input type="radio" id="mrs" name="gender">
+            </p>
+            <p>
+                <label for="pw">Password:</label>
+                 <input type="password" id="pw" name="password" placeholder="Enter your password:" required>
+            </p>
+                   </fieldset>
+        <fieldset>
+          <legend ALIGN="CENTER">Hobbies</legend>
+          <p>
+            <label for="sport">Sports:</label>
+          <label for="football">Football</label>
+          <input type="checkbox" id="football">
+          <label for="cricket">Cricket</label>
+          <input type="checkbox" id="cricket">
+          </p>
+        </fieldset>
+        <p>
+            <input type="submit" >
+        </p>
+    </form>
+</body>
+</html>
